@@ -10,4 +10,7 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - checkout
+            - sudo apt update
+            - sudo apt install -qy make
+            - make init
+            - make ci test
